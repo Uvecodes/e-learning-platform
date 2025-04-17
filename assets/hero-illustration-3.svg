@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background elements -->
+  <rect x="0" y="450" width="800" height="50" rx="0" fill="#10162F" opacity="0.1"/>
+  <rect x="150" y="420" width="500" height="10" rx="5" fill="#FFCC33" opacity="0.5"/>
+  
+  <!-- Abstract design elements -->
+  <circle cx="80" cy="80" r="60" fill="#6400E4" opacity="0.08"/>
+  <circle cx="720" cy="120" r="50" fill="#FFCC33" opacity="0.08"/>
+  <polygon points="650,400 690,450 610,450" fill="#6400E4" opacity="0.08"/>
+  
+  <!-- Central smartphone -->
+  <rect x="320" y="120" width="160" height="260" rx="20" fill="#10162F" stroke="#000000" stroke-width="3"/>
+  <rect x="330" y="140" width="140" height="220" rx="5" fill="#FFFFFF"/>
+  <circle cx="400" cy="380" r="10" fill="#FFFFFF" opacity="0.5"/>
+  <rect x="380" y="130" width="40" height="5" rx="2" fill="#FFFFFF" opacity="0.3"/>
+  
+  <!-- App interface on smartphone -->
+  <rect x="340" y="150" width="120" height="200" rx="2" fill="#ECF3FC"/>
+  
+  <!-- App elements -->
+  <rect x="350" y="160" width="100" height="30" rx="5" fill="#6400E4" opacity="0.9"/>
+  <text x="365" y="180" font-family="Arial" font-size="14" fill="#FFFFFF" font-weight="bold">LEARN IT</text>
+  
+  <rect x="350" y="200" width="100" height="60" rx="5" fill="#FFFFFF" stroke="#10162F" stroke-width="1"/>
+  <text x="360" y="225" font-family="Arial" font-size="12" fill="#10162F">Interactive</text>
+  <text x="360" y="245" font-family="Arial" font-size="12" fill="#10162F">AI Lessons</text>
+  <circle cx="420" cy="230" r="15" fill="#FFCC33" opacity="0.8"/>
+  <text x="416" y="235" font-family="Arial" font-size="16" fill="#10162F" font-weight="bold">+</text>
+  
+  <rect x="350" y="270" width="45" height="60" rx="5" fill="#FFFFFF" stroke="#10162F" stroke-width="1"/>
+  <text x="358" y="300" font-family="Arial" font-size="10" fill="#10162F">Code</text>
+  <text x="356" y="315" font-family="Arial" font-size="10" fill="#10162F">Track</text>
+  
+  <rect x="405" y="270" width="45" height="60" rx="5" fill="#FFFFFF" stroke="#10162F" stroke-width="1"/>
+  <text x="413" y="300" font-family="Arial" font-size="10" fill="#10162F">Data</text>
+  <text x="413" y="315" font-family="Arial" font-size="10" fill="#10162F">Labs</text>
+  
+  <circle cx="400" cy="365" r="12" fill="#6400E4"/>
+  <path d="M395 365 L400 370 L405 365" stroke="#FFFFFF" stroke-width="2"/>
+  
+  <!-- Tablet device on left -->
+  <rect x="120" y="200" width="180" height="140" rx="10" fill="#FFFFFF" stroke="#10162F" stroke-width="3"/>
+  <rect x="130" y="210" width="160" height="120" rx="3" fill="#ECF3FC"/>
+  
+  <!-- Content on tablet -->
+  <text x="145" y="230" font-family="Arial" font-size="12" fill="#10162F" font-weight="bold">COURSE PROGRESS</text>
+  
+  <rect x="140" y="240" width="140" height="8" rx="4" fill="#F5F9FC" stroke="#10162F" stroke-width="1"/>
+  <rect x="140" y="240" width="90" height="8" rx="4" fill="#6400E4"/>
+  <text x="140" y="260" font-family="Arial" font-size="10" fill="#10162F">Web Development • 65%</text>
+  
+  <rect x="140" y="270" width="140" height="8" rx="4" fill="#F5F9FC" stroke="#10162F" stroke-width="1"/>
+  <rect x="140" y="270" width="120" height="8" rx="4" fill="#FFCC33"/>
+  <text x="140" y="290" font-family="Arial" font-size="10" fill="#10162F">Data Science • 85%</text>
+  
+  <rect x="140" y="300" width="140" height="8" rx="4" fill="#F5F9FC" stroke="#10162F" stroke-width="1"/>
+  <rect x="140" y="300" width="50" height="8" rx="4" fill="#10162F"/>
+  <text x="140" y="320" font-family="Arial" font-size="10" fill="#10162F">AI Fundamentals • 35%</text>
+  
+  <!-- Digital notebook on right -->
+  <rect x="500" y="180" width="200" height="160" rx="5" fill="#FFFFFF" stroke="#10162F" stroke-width="2.5"/>
+  <line x1="550" y1="180" x2="550" y2="340" stroke="#10162F" stroke-width="0.5" opacity="0.5"/>
+  <line x1="500" y1="200" x2="700" y2="200" stroke="#10162F" stroke-width="0.5" opacity="0.5"/>
+  <line x1="500" y1="220" x2="700" y2="220" stroke="#10162F" stroke-width="0.5" opacity="0.5"/>
+  <line x1="500" y1="240" x2="700" y2="240" stroke="#10162F" stroke-width="0.5" opacity="0.5"/>
+  <line x1="500" y1="260" x2="700" y2="260" stroke="#10162F" stroke-width="0.5" opacity="0.5"/>
+  <line x1="500" y1="280" x2="700" y2="280" stroke="#10162F" stroke-width="0.5" opacity="0.5"/>
+  <line x1="500" y1="300" x2="700" y2="300" stroke="#10162F" stroke-width="0.5" opacity="0.5"/>
+  <line x1="500" y1="320" x2="700" y2="320" stroke="#10162F" stroke-width="0.5" opacity="0.5"/>
+  
+  <text x="520" y="195" font-family="Arial" font-size="14" fill="#10162F" font-weight="bold">MY LEARNING NOTES</text>
+  <text x="560" y="215" font-family="Arial" font-size="10" fill="#10162F">□ Complete JavaScript module</text>
+  <text x="560" y="235" font-family="Arial" font-size="10" fill="#10162F">☑ Review Python functions</text>
+  <text x="560" y="255" font-family="Arial" font-size="10" fill="#10162F">□ Practice SQL queries</text>
+  <text x="560" y="275" font-family="Arial" font-size="10" fill="#10162F">□ Start machine learning intro</text>
+  <text x="560" y="295" font-family="Arial" font-size="10" fill="#10162F">☑ Complete CS fundamentals</text>
+  <text x="560" y="315" font-family="Arial" font-size="10" fill="#10162F">□ Build portfolio project</text>
+  <text x="560" y="335" font-family="Arial" font-size="10" fill="#6400E4" font-weight="bold">+ Add new task</text>
+  
+  <!-- AI assistant element -->
+  <circle cx="650" cy="90" r="40" fill="#F5F9FC" stroke="#10162F" stroke-width="2"/>
+  <circle cx="635" cy="80" r="5" fill="#10162F"/>
+  <circle cx="665" cy="80" r="5" fill="#10162F"/>
+  <path d="M635 105 Q650 115, 665 105" stroke="#10162F" stroke-width="2" fill="none"/>
+  <path d="M610 90 Q625 60, 650 65 Q675 60, 690 90 Q695 110, 670 120 Q650 130, 630 120 Q605 110, 610 90 Z" fill="#FFCC33" opacity="0.1" stroke="#10162F" stroke-width="1"/>
+  <text x="625" y="55" font-family="Arial" font-size="12" fill="#6400E4" font-weight="bold">AI TUTOR</text>
+  
+  <!-- Learning path visualization -->
+  <circle cx="130" cy="130" r="25" fill="#6400E4" opacity="0.7"/>
+  <circle cx="190" cy="100" r="25" fill="#FFCC33" opacity="0.7"/>
+  <circle cx="250" cy="130" r="25" fill="#10162F" opacity="0.7"/>
+  <path d="M130 130 L190 100" stroke="#10162F" stroke-width="2" stroke-dasharray="4 2"/>
+  <path d="M190 100 L250 130" stroke="#10162F" stroke-width="2" stroke-dasharray="4 2"/>
+  <text x="123" y="135" font-family="Arial" font-size="12" fill="#FFFFFF" font-weight="bold">1</text>
+  <text x="183" y="105" font-family="Arial" font-size="12" fill="#10162F" font-weight="bold">2</text>
+  <text x="243" y="135" font-family="Arial" font-size="12" fill="#FFFFFF" font-weight="bold">3</text>
+  
+  <!-- Coffee mug -->
+  <path d="M180 370 Q180 350, 220 350 Q260 350, 260 370 L250 410 Q245 420, 195 420 Q185 420, 190 410 Z" fill="#F5F9FC" stroke="#10162F" stroke-width="2"/>
+  <path d="M220 350 Q240 350, 250 330 Q260 310, 235 310 Q210 310, 220 330 Q230 350, 220 350 Z" fill="#F5F9FC" stroke="#10162F" stroke-width="2"/>
+  <path d="M190 370 L250 370" stroke="#6400E4" stroke-width="2" opacity="0.8"/>
+</svg>

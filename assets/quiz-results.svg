@@ -1,0 +1,71 @@
+<svg width="350" height="300" viewBox="0 0 350 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background shapes -->
+  <circle cx="175" cy="150" r="120" fill="#F5F9FC" opacity="0.7"/>
+  <circle cx="280" cy="100" r="20" fill="#6400E4" opacity="0.1"/>
+  <circle cx="70" cy="180" r="30" fill="#FFCC33" opacity="0.2"/>
+  
+  <!-- Results Illustration -->
+  <g>
+    <!-- Learning path map -->
+    <path d="M60 150C60 150 100 120 140 130C180 140 190 170 230 170C270 170 290 130 290 130" 
+          stroke="#6400E4" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 4"/>
+    
+    <!-- Start point -->
+    <circle cx="60" cy="150" r="10" fill="#FFCC33"/>
+    <text x="57" y="154" font-family="Arial" font-size="10" font-weight="bold" fill="#10162F">S</text>
+    
+    <!-- Mid points / milestones -->
+    <circle cx="140" cy="130" r="6" fill="#6400E4"/>
+    <circle cx="190" cy="170" r="6" fill="#6400E4"/>
+    <circle cx="230" cy="170" r="6" fill="#6400E4"/>
+    
+    <!-- End point / goal -->
+    <circle cx="290" cy="130" r="10" fill="#33CC99"/>
+    <text x="287" y="134" font-family="Arial" font-size="10" font-weight="bold" fill="#10162F">G</text>
+    
+    <!-- Course cards -->
+    <g transform="translate(70, 60)">
+      <rect x="0" y="0" width="70" height="50" rx="5" fill="white" stroke="#D0D9E8" stroke-width="2"/>
+      <rect x="0" y="0" width="70" height="15" rx="5" fill="#6400E4"/>
+      <text x="5" y="11" font-family="Arial" font-size="8" font-weight="bold" fill="white">COURSE 1</text>
+      <text x="5" y="30" font-family="Arial" font-size="7" fill="#10162F">Web Basics</text>
+      <text x="5" y="42" font-family="Arial" font-size="7" fill="#10162F">8 weeks</text>
+    </g>
+    
+    <g transform="translate(150, 100)">
+      <rect x="0" y="0" width="70" height="50" rx="5" fill="white" stroke="#D0D9E8" stroke-width="2"/>
+      <rect x="0" y="0" width="70" height="15" rx="5" fill="#6400E4"/>
+      <text x="5" y="11" font-family="Arial" font-size="8" font-weight="bold" fill="white">COURSE 2</text>
+      <text x="5" y="30" font-family="Arial" font-size="7" fill="#10162F">JavaScript</text>
+      <text x="5" y="42" font-family="Arial" font-size="7" fill="#10162F">10 weeks</text>
+    </g>
+    
+    <g transform="translate(210, 190)">
+      <rect x="0" y="0" width="70" height="50" rx="5" fill="white" stroke="#D0D9E8" stroke-width="2"/>
+      <rect x="0" y="0" width="70" height="15" rx="5" fill="#6400E4"/>
+      <text x="5" y="11" font-family="Arial" font-size="8" font-weight="bold" fill="white">COURSE 3</text>
+      <text x="5" y="30" font-family="Arial" font-size="7" fill="#10162F">React</text>
+      <text x="5" y="42" font-family="Arial" font-size="7" fill="#10162F">12 weeks</text>
+    </g>
+    
+    <!-- Certificate/Trophy -->
+    <g transform="translate(235, 70)">
+      <path d="M35 50H5C2.23858 50 0 47.7614 0 45V5C0 2.23858 2.23858 0 5 0H35C37.7614 0 40 2.23858 40 5V45C40 47.7614 37.7614 50 35 50Z" fill="#FFCC33"/>
+      <path d="M30 45H10C7.23858 45 5 42.7614 5 40V10C5 7.23858 7.23858 5 10 5H30C32.7614 5 35 7.23858 35 10V40C35 42.7614 32.7614 45 30 45Z" fill="#FFF4DD"/>
+      <text x="14" y="30" font-family="Arial" font-size="20" font-weight="bold" fill="#10162F">★</text>
+    </g>
+    
+    <!-- Person celebrating -->
+    <g transform="translate(40, 200)">
+      <!-- Head -->
+      <circle cx="25" cy="15" r="15" fill="#FFD7B5"/>
+      
+      <!-- Body -->
+      <path d="M10 35C10 29.4772 14.4772 25 20 25H30C35.5228 25 40 29.4772 40 35V55C40 60.5228 35.5228 65 30 65H20C14.4772 65 10 60.5228 10 55V35Z" fill="#10162F"/>
+      
+      <!-- Arms celebrating -->
+      <path d="M10 35C10 35 0 25 -5 15" stroke="#FFD7B5" stroke-width="8" stroke-linecap="round"/>
+      <path d="M40 35C40 35 50 25 55 15" stroke="#FFD7B5" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg> 

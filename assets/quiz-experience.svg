@@ -1,0 +1,76 @@
+<svg width="350" height="300" viewBox="0 0 350 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background shapes -->
+  <circle cx="175" cy="150" r="120" fill="#F5F9FC" opacity="0.7"/>
+  <circle cx="60" cy="80" r="20" fill="#6400E4" opacity="0.1"/>
+  <circle cx="270" cy="220" r="30" fill="#FFCC33" opacity="0.2"/>
+  
+  <!-- Experience Level Illustration -->
+  <g>
+    <!-- Skill level bars -->
+    <g transform="translate(115, 80)">
+      <!-- Label -->
+      <text x="-60" y="15" font-family="Arial" font-size="12" font-weight="bold" fill="#10162F">Beginner</text>
+      
+      <!-- Bar container -->
+      <rect x="0" y="0" width="200" height="20" rx="10" fill="#E8EEFA"/>
+      
+      <!-- Filled portion -->
+      <rect x="0" y="0" width="50" height="20" rx="10" fill="#6400E4"/>
+    </g>
+    
+    <g transform="translate(115, 120)">
+      <!-- Label -->
+      <text x="-60" y="15" font-family="Arial" font-size="12" font-weight="bold" fill="#10162F">Intermediate</text>
+      
+      <!-- Bar container -->
+      <rect x="0" y="0" width="200" height="20" rx="10" fill="#E8EEFA"/>
+      
+      <!-- Filled portion -->
+      <rect x="0" y="0" width="100" height="20" rx="10" fill="#6400E4"/>
+    </g>
+    
+    <g transform="translate(115, 160)">
+      <!-- Label -->
+      <text x="-60" y="15" font-family="Arial" font-size="12" font-weight="bold" fill="#10162F">Advanced</text>
+      
+      <!-- Bar container -->
+      <rect x="0" y="0" width="200" height="20" rx="10" fill="#E8EEFA"/>
+      
+      <!-- Filled portion -->
+      <rect x="0" y="0" width="150" height="20" rx="10" fill="#6400E4"/>
+    </g>
+    
+    <g transform="translate(115, 200)">
+      <!-- Label -->
+      <text x="-60" y="15" font-family="Arial" font-size="12" font-weight="bold" fill="#10162F">Expert</text>
+      
+      <!-- Bar container -->
+      <rect x="0" y="0" width="200" height="20" rx="10" fill="#E8EEFA"/>
+      
+      <!-- Filled portion -->
+      <rect x="0" y="0" width="200" height="20" rx="10" fill="#6400E4"/>
+    </g>
+    
+    <!-- Person icon with skill badge -->
+    <g transform="translate(50, 225)">
+      <!-- Head -->
+      <circle cx="25" cy="15" r="15" fill="#FFD7B5"/>
+      
+      <!-- Body -->
+      <path d="M10 35C10 29.4772 14.4772 25 20 25H30C35.5228 25 40 29.4772 40 35V55C40 60.5228 35.5228 65 30 65H20C14.4772 65 10 60.5228 10 55V35Z" fill="#10162F"/>
+      
+      <!-- Badge/Medal -->
+      <circle cx="45" cy="25" r="15" fill="#FFCC33"/>
+      <circle cx="45" cy="25" r="10" fill="#FFF4DD"/>
+      <text x="41" y="29" font-family="Arial" font-size="12" font-weight="bold" fill="#10162F">★</text>
+    </g>
+    
+    <!-- Code symbols -->
+    <g transform="translate(260, 100)">
+      <!-- Code brackets -->
+      <path d="M10 0L0 15L10 30" stroke="#10162F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M30 0L40 15L30 30" stroke="#10162F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="15" y1="5" x2="25" y2="25" stroke="#6400E4" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg> 

@@ -1,0 +1,60 @@
+<svg width="350" height="300" viewBox="0 0 350 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background shapes -->
+  <circle cx="175" cy="150" r="120" fill="#F5F9FC" opacity="0.7"/>
+  <circle cx="260" cy="80" r="20" fill="#6400E4" opacity="0.1"/>
+  <circle cx="75" cy="200" r="30" fill="#FFCC33" opacity="0.2"/>
+  
+  <!-- Goal Setting Illustration -->
+  <g>
+    <!-- Targets -->
+    <circle cx="170" cy="150" r="70" fill="#E8EEFA" stroke="#D0D9E8" stroke-width="2"/>
+    <circle cx="170" cy="150" r="55" fill="#F5F9FC" stroke="#D0D9E8" stroke-width="2"/>
+    <circle cx="170" cy="150" r="40" fill="#E8EEFA" stroke="#D0D9E8" stroke-width="2"/>
+    <circle cx="170" cy="150" r="25" fill="#F5F9FC" stroke="#D0D9E8" stroke-width="2"/>
+    <circle cx="170" cy="150" r="10" fill="#6400E4"/>
+    
+    <!-- Arrow -->
+    <path d="M260 150L220 130L230 150L220 170L260 150Z" fill="#6400E4"/>
+    <rect x="140" y="147" width="90" height="6" fill="#6400E4"/>
+    
+    <!-- Person setting goals -->
+    <g transform="translate(30, 120)">
+      <!-- Head -->
+      <circle cx="50" cy="30" r="20" fill="#FFD7B5"/>
+      
+      <!-- Body -->
+      <path d="M30 60C30 54.4772 34.4772 50 40 50H60C65.5228 50 70 54.4772 70 60V90C70 95.5228 65.5228 100 60 100H40C34.4772 100 30 95.5228 30 90V60Z" fill="#10162F"/>
+      
+      <!-- Arms -->
+      <rect x="70" y="55" width="35" height="10" rx="5" fill="#FFD7B5"/>
+      <rect x="30" y="55" width="5" height="10" rx="2.5" fill="#10162F"/>
+      <rect x="20" y="55" width="15" height="10" rx="5" fill="#FFD7B5"/>
+      
+      <!-- Goals list -->
+      <rect x="0" y="40" width="25" height="35" rx="2" fill="white" stroke="#D0D9E8"/>
+      <line x1="5" y1="50" x2="20" y2="50" stroke="#10162F" stroke-width="2"/>
+      <line x1="5" y1="55" x2="15" y2="55" stroke="#10162F" stroke-width="2"/>
+      <line x1="5" y1="60" x2="18" y2="60" stroke="#10162F" stroke-width="2"/>
+      <line x1="5" y1="65" x2="12" y2="65" stroke="#10162F" stroke-width="2"/>
+      
+      <!-- Checkmark -->
+      <path d="M5 45L8 48L15 41" stroke="#6400E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    
+    <!-- Career path indicators -->
+    <g transform="translate(210, 75)">
+      <rect x="0" y="0" width="60" height="20" rx="5" fill="#FFCC33" opacity="0.8"/>
+      <text x="10" y="15" font-family="Arial" font-size="10" font-weight="bold" fill="#10162F">CAREER</text>
+    </g>
+    
+    <g transform="translate(240, 105)">
+      <rect x="0" y="0" width="60" height="20" rx="5" fill="#6400E4" opacity="0.8"/>
+      <text x="10" y="15" font-family="Arial" font-size="10" font-weight="bold" fill="white">SKILLS</text>
+    </g>
+    
+    <g transform="translate(210, 195)">
+      <rect x="0" y="0" width="80" height="20" rx="5" fill="#33CC99" opacity="0.8"/>
+      <text x="10" y="15" font-family="Arial" font-size="10" font-weight="bold" fill="#10162F">PROJECTS</text>
+    </g>
+  </g>
+</svg> 

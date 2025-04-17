@@ -1,0 +1,71 @@
+<svg width="350" height="300" viewBox="0 0 350 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background shapes -->
+  <circle cx="175" cy="150" r="120" fill="#F5F9FC" opacity="0.7"/>
+  <circle cx="70" cy="70" r="20" fill="#6400E4" opacity="0.1"/>
+  <circle cx="280" cy="180" r="30" fill="#FFCC33" opacity="0.2"/>
+  
+  <!-- Time Commitment Illustration -->
+  <g>
+    <!-- Large Clock -->
+    <circle cx="175" cy="150" r="80" fill="#E8EEFA" stroke="#D0D9E8" stroke-width="3"/>
+    <circle cx="175" cy="150" r="5" fill="#10162F"/>
+    
+    <!-- Clock hands -->
+    <line x1="175" y1="150" x2="175" y2="100" stroke="#10162F" stroke-width="3" stroke-linecap="round"/>
+    <line x1="175" y1="150" x2="225" y2="150" stroke="#6400E4" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Hour marks -->
+    <line x1="175" y1="70" x2="175" y2="80" stroke="#10162F" stroke-width="2"/>
+    <line x1="175" y1="220" x2="175" y2="230" stroke="#10162F" stroke-width="2"/>
+    <line x1="105" y1="150" x2="115" y2="150" stroke="#10162F" stroke-width="2"/>
+    <line x1="235" y1="150" x2="245" y2="150" stroke="#10162F" stroke-width="2"/>
+    <line x1="124" y1="99" x2="131" y2="106" stroke="#10162F" stroke-width="2"/>
+    <line x1="219" y1="194" x2="226" y2="201" stroke="#10162F" stroke-width="2"/>
+    <line x1="124" y1="201" x2="131" y2="194" stroke="#10162F" stroke-width="2"/>
+    <line x1="219" y1="106" x2="226" y2="99" stroke="#10162F" stroke-width="2"/>
+    
+    <!-- Calendar / Schedule -->
+    <g transform="translate(50, 180)">
+      <rect x="0" y="0" width="60" height="70" rx="5" fill="white" stroke="#D0D9E8" stroke-width="2"/>
+      <line x1="0" y1="20" x2="60" y2="20" stroke="#D0D9E8" stroke-width="2"/>
+      <line x1="15" y1="0" x2="15" y2="70" stroke="#D0D9E8" stroke-width="1"/>
+      <line x1="30" y1="0" x2="30" y2="70" stroke="#D0D9E8" stroke-width="1"/>
+      <line x1="45" y1="0" x2="45" y2="70" stroke="#D0D9E8" stroke-width="1"/>
+      <line x1="0" y1="35" x2="60" y2="35" stroke="#D0D9E8" stroke-width="1"/>
+      <line x1="0" y1="50" x2="60" y2="50" stroke="#D0D9E8" stroke-width="1"/>
+      
+      <!-- Highlight certain dates -->
+      <rect x="15" y="35" width="15" height="15" fill="#6400E4" opacity="0.3"/>
+      <rect x="30" y="50" width="15" height="15" fill="#6400E4" opacity="0.3"/>
+      <text x="5" y="15" font-family="Arial" font-size="10" font-weight="bold" fill="#10162F">MAY</text>
+    </g>
+    
+    <!-- Time durations -->
+    <g transform="translate(240, 80)">
+      <rect x="0" y="0" width="60" height="20" rx="10" fill="#FFCC33" opacity="0.8"/>
+      <text x="8" y="15" font-family="Arial" font-size="10" font-weight="bold" fill="#10162F">5 HRS</text>
+    </g>
+    
+    <g transform="translate(240, 110)">
+      <rect x="0" y="0" width="60" height="20" rx="10" fill="#6400E4" opacity="0.8"/>
+      <text x="8" y="15" font-family="Arial" font-size="10" font-weight="bold" fill="white">10 HRS</text>
+    </g>
+    
+    <g transform="translate(240, 140)">
+      <rect x="0" y="0" width="60" height="20" rx="10" fill="#33CC99" opacity="0.8"/>
+      <text x="8" y="15" font-family="Arial" font-size="10" font-weight="bold" fill="#10162F">20 HRS</text>
+    </g>
+    
+    <!-- Person managing time -->
+    <g transform="translate(70, 80)">
+      <!-- Head -->
+      <circle cx="25" cy="15" r="15" fill="#FFD7B5"/>
+      
+      <!-- Body -->
+      <path d="M10 35C10 29.4772 14.4772 25 20 25H30C35.5228 25 40 29.4772 40 35V55C40 60.5228 35.5228 65 30 65H20C14.4772 65 10 60.5228 10 55V35Z" fill="#10162F"/>
+      
+      <!-- Arms - pointing at clock -->
+      <path d="M40 35C40 35 50 40 60 50" stroke="#FFD7B5" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg> 

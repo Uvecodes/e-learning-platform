@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Shadow/Glow elements -->
+  <ellipse cx="150" cy="175" rx="120" ry="20" fill="#f0f0f0" opacity="0.3"/>
+  <polygon points="220,145 245,135 235,155" fill="#FFDB00" stroke="#10162F" stroke-width="2"/>
+  
+  <!-- Target circles -->
+  <circle cx="140" cy="140" r="100" fill="#10162F"/>
+  <circle cx="140" cy="140" r="80" fill="#fff8f1"/>
+  <circle cx="140" cy="140" r="60" fill="#E93D3D"/>
+  <circle cx="140" cy="140" r="40" fill="#fff8f1"/>
+  <circle cx="140" cy="140" r="20" fill="#E93D3D"/>
+  
+  <!-- Arrow -->
+  <line x1="240" y1="140" x2="140" y2="140" stroke="#10162F" stroke-width="8"/>
+  <circle cx="140" cy="140" r="5" fill="#10162F"/>
+  
+  <!-- Arrow tail -->
+  <line x1="260" y1="140" x2="240" y2="140" stroke="#10162F" stroke-width="8"/>
+  <polygon points="260,140 290,125 290,155" fill="#FFDB00" stroke="#10162F" stroke-width="2"/>
+  
+  <!-- Decorative elements -->
+  <path d="M80,60 L90,50 L100,65" fill="none" stroke="#10162F" stroke-width="2"/>
+  <path d="M230,80 L245,70 L250,85" fill="none" stroke="#10162F" stroke-width="2"/>
+  <circle cx="250" cy="60" r="3" fill="#10162F"/>
+  <circle cx="200" cy="40" r="5" fill="#f0f0f0"/>
+  <rect x="180" y="200" width="10" height="10" transform="rotate(45 185 205)" fill="#10162F"/>
+</svg> 

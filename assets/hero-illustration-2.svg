@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background elements -->
+  <rect x="0" y="450" width="800" height="50" rx="0" fill="#10162F" opacity="0.1"/>
+  <rect x="100" y="380" width="600" height="12" rx="6" fill="#6400E4" opacity="0.4"/>
+  
+  <!-- Abstract shapes -->
+  <circle cx="700" cy="100" r="50" fill="#FFCC33" opacity="0.1"/>
+  <circle cx="100" cy="180" r="40" fill="#6400E4" opacity="0.1"/>
+  <rect x="50" y="350" width="60" height="60" rx="10" fill="#10162F" opacity="0.1"/>
+  <polygon points="750,280 780,330 720,330" fill="#FFCC33" opacity="0.1"/>
+  
+  <!-- Modern classroom environment -->
+  <rect x="200" y="150" width="400" height="200" rx="5" fill="#F5F9FC" stroke="#10162F" stroke-width="3"/>
+  <line x1="200" y1="190" x2="600" y2="190" stroke="#10162F" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Digital screen/interactive board -->
+  <rect x="250" y="100" width="300" height="180" rx="5" fill="#FFFFFF" stroke="#10162F" stroke-width="3"/>
+  <rect x="260" y="110" width="280" height="160" rx="2" fill="#ECF3FC"/>
+  
+  <!-- Content on digital board -->
+  <text x="300" y="140" font-family="Arial" font-size="16" fill="#10162F" font-weight="bold">MODERN LEARNING PATH</text>
+  <line x1="300" y1="150" x2="500" y2="150" stroke="#6400E4" stroke-width="2"/>
+  
+  <!-- Course module visualization -->
+  <rect x="280" y="170" width="70" height="70" rx="5" fill="#6400E4" opacity="0.7"/>
+  <text x="300" y="210" font-family="Arial" font-size="12" fill="#FFFFFF">START</text>
+  
+  <rect x="370" y="170" width="70" height="70" rx="5" fill="#10162F" opacity="0.7"/>
+  <text x="385" y="210" font-family="Arial" font-size="12" fill="#FFFFFF">BUILD</text>
+  
+  <rect x="460" y="170" width="70" height="70" rx="5" fill="#FFCC33" opacity="0.7"/>
+  <text x="475" y="210" font-family="Arial" font-size="12" fill="#10162F">MASTER</text>
+  
+  <path d="M350 205 L370 205" stroke="#FFFFFF" stroke-width="2"/>
+  <path d="M440 205 L460 205" stroke="#FFFFFF" stroke-width="2"/>
+  <polygon points="365,200 365,210 375,205" fill="#FFFFFF"/>
+  <polygon points="455,200 455,210 465,205" fill="#FFFFFF"/>
+  
+  <!-- Students/learners -->
+  <!-- Student 1 -->
+  <circle cx="150" cy="300" r="35" fill="#F5F9FC" stroke="#10162F" stroke-width="2.5"/>
+  <rect x="140" y="335" width="20" height="60" rx="8" fill="#F5F9FC" stroke="#10162F" stroke-width="2.5"/>
+  <rect x="125" y="370" width="15" height="45" rx="5" transform="rotate(-20 125 370)" fill="#F5F9FC" stroke="#10162F" stroke-width="2.5"/>
+  <rect x="160" y="370" width="15" height="45" rx="5" transform="rotate(20 160 370)" fill="#F5F9FC" stroke="#10162F" stroke-width="2.5"/>
+  <circle cx="140" cy="290" r="5" fill="#10162F"/>
+  <circle cx="160" cy="290" r="5" fill="#10162F"/>
+  <path d="M140 315 Q150 325, 160 315" stroke="#10162F" stroke-width="2" fill="none"/>
+  
+  <!-- Student 2 -->
+  <circle cx="650" cy="320" r="35" fill="#F5F9FC" stroke="#10162F" stroke-width="2.5"/>
+  <rect x="640" y="355" width="20" height="60" rx="8" fill="#F5F9FC" stroke="#10162F" stroke-width="2.5"/>
+  <rect x="625" y="385" width="15" height="50" rx="5" transform="rotate(-30 625 385)" fill="#F5F9FC" stroke="#10162F" stroke-width="2.5"/>
+  <rect x="660" y="385" width="15" height="50" rx="5" transform="rotate(30 660 385)" fill="#F5F9FC" stroke="#10162F" stroke-width="2.5"/>
+  <circle cx="640" cy="310" r="5" fill="#10162F"/>
+  <circle cx="660" cy="310" r="5" fill="#10162F"/>
+  <path d="M640 330 Q650 340, 660 330" stroke="#10162F" stroke-width="2" fill="none"/>
+  
+  <!-- Desk with devices -->
+  <rect x="320" y="300" width="160" height="10" rx="2" fill="#10162F"/>
+  <rect x="330" y="310" width="140" height="80" rx="3" fill="#F5F9FC" stroke="#10162F" stroke-width="2"/>
+  
+  <!-- Laptop on desk -->
+  <rect x="350" y="320" width="100" height="60" rx="5" fill="#FFFFFF" stroke="#10162F" stroke-width="2"/>
+  <rect x="350" y="350" width="100" height="30" rx="2" fill="#10162F"/>
+  <rect x="360" y="325" width="80" height="20" rx="2" fill="#ECF3FC"/>
+  <line x1="370" y1="335" x2="430" y2="335" stroke="#6400E4" stroke-width="1.5"/>
+  
+  <!-- Thought bubbles and learning concepts -->
+  <circle cx="180" cy="240" r="15" fill="#F5F9FC" stroke="#10162F" stroke-width="2"/>
+  <circle cx="210" cy="220" r="20" fill="#F5F9FC" stroke="#10162F" stroke-width="2"/>
+  <text x="195" y="225" font-family="Arial" font-size="14" fill="#6400E4" font-weight="bold">?</text>
+  
+  <circle cx="600" cy="250" r="20" fill="#F5F9FC" stroke="#10162F" stroke-width="2"/>
+  <text x="593" y="255" font-family="Arial" font-size="16" fill="#FFCC33" font-weight="bold">!</text>
+  
+  <!-- Bookshelf/learning resources -->
+  <rect x="120" y="150" width="60" height="100" rx="2" fill="#F5F9FC" stroke="#10162F" stroke-width="2"/>
+  <line x1="120" y1="170" x2="180" y2="170" stroke="#10162F" stroke-width="1"/>
+  <line x1="120" y1="190" x2="180" y2="190" stroke="#10162F" stroke-width="1"/>
+  <line x1="120" y1="210" x2="180" y2="210" stroke="#10162F" stroke-width="1"/>
+  <line x1="120" y1="230" x2="180" y2="230" stroke="#10162F" stroke-width="1"/>
+  
+  <rect x="125" y="155" width="10" height="15" rx="1" fill="#6400E4" opacity="0.8"/>
+  <rect x="140" y="155" width="10" height="15" rx="1" fill="#FFCC33" opacity="0.8"/>
+  <rect x="155" y="155" width="10" height="15" rx="1" fill="#10162F" opacity="0.8"/>
+  <rect x="130" y="175" width="10" height="15" rx="1" fill="#10162F" opacity="0.8"/>
+  <rect x="145" y="175" width="10" height="15" rx="1" fill="#6400E4" opacity="0.8"/>
+  <rect x="160" y="175" width="10" height="15" rx="1" fill="#FFCC33" opacity="0.8"/>
+  
+  <!-- Digital skills symbols -->
+  <circle cx="700" cy="400" r="30" fill="#F5F9FC" stroke="#10162F" stroke-width="2"/>
+  <text x="685" y="405" font-family="Courier New" font-size="16" fill="#6400E4" font-weight="bold">&lt;/&gt;</text>
+  
+  <circle cx="630" cy="400" r="30" fill="#F5F9FC" stroke="#10162F" stroke-width="2"/>
+  <text x="615" y="405" font-family="Arial" font-size="10" fill="#10162F" font-weight="bold">DATA</text>
+</svg>
