@@ -315,247 +315,37 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Initialize carousel
-    startCarousel();
-    // Set initial image styling for larger SVGs
-    heroIllustration.style.maxHeight = '350px';
-    heroIllustration.style.objectFit = 'contain';
-    heroIllustration.style.transition = 'opacity 0.5s ease-in-out';
+    if (heroIllustration) {
+        startCarousel();
+        // Set initial image styling for larger SVGs
+        heroIllustration.style.maxHeight = '350px';
+        heroIllustration.style.objectFit = 'contain';
+        heroIllustration.style.transition = 'opacity 0.5s ease-in-out';
 
-    // Add event listeners to dots
-    document.querySelectorAll('.dot').forEach(dot => {
-        dot.addEventListener('click', () => {
-            currentIllustration = parseInt(dot.getAttribute('data-index'));
-            updateCarousel();
-            
-            // Reset timer if playing
-            if (isPlaying) {
-                clearInterval(carouselInterval);
-                startCarousel();
-            }
-        });
-    });
-
-    // Add event listener to play/pause button
-    document.querySelector('.carousel-play').addEventListener('click', () => {
-        if (isPlaying) {
-            pauseCarousel();
-        } else {
-            startCarousel();
-        }
-    });
-    
-    // =============================================
-    // Learning Path Quiz Implementation
-    // =============================================
-    
-    // Quiz data structure - questions and possible results
-    const quizData = {
-        steps: [
-            {
-                title: "What do you want to achieve?",
-                options: [
-                    "Start a new career in tech",
-                    "Advance in my current role",
-                    "Learn specific skills for a project",
-                    "Explore new topics out of curiosity"
-                ]
-            },
-            {
-                title: "What's your current experience level?",
-                options: [
-                    "Complete beginner",
-                    "Some basic knowledge",
-                    "Intermediate skills",
-                    "Advanced practitioner"
-                ]
-            },
-            {
-                title: "How much time can you commit weekly?",
-                options: [
-                    "1-3 hours",
-                    "4-6 hours",
-                    "7-10 hours",
-                    "10+ hours"
-                ]
-            }
-        ],
-        results: [
-            {
-                title: "Web Development Path",
-                description: "Based on your answers, we recommend our structured web development track that will take you from beginner to job-ready professional.",
-                courses: [1, 4, 5]
-            },
-            {
-                title: "Data Science Journey",
-                description: "Your profile matches our data science curriculum, designed to build your analytical skills progressively.",
-                courses: [2, 6]
-            },
-            {
-                title: "Flexible Learning Plan",
-                description: "We suggest a customized learning approach focusing on specific skills that align with your goals and time constraints.",
-                courses: [3, 5]
-            },
-            {
-                title: "Career Advancement Track",
-                description: "Our professional development path will help you level up your existing skills and prepare for your next career move.",
-                courses: [2, 3, 6]
-            }
-        ]
-    };
-    
-    // Initialize quiz functionality
-    const quizInit = () => {
-        const quizSteps = document.querySelectorAll('.quiz-steps .step');
-        const quizContent = document.querySelector('.quiz-content');
-        const quizImage = document.querySelector('.quiz-image img');
-        
-        if (!quizSteps.length || !quizContent) return; // Exit if quiz elements don't exist
-        
-        let currentStep = 0;
-        const userAnswers = [];
-        
-        // Function to update quiz content based on current step
-        const updateQuizContent = () => {
-            // Update steps UI
-            quizSteps.forEach((step, index) => {
-                if (index === currentStep) {
-                    step.classList.add('active');
-                } else {
-                    step.classList.remove('active');
+        // Add event listeners to dots
+        document.querySelectorAll('.dot').forEach(dot => {
+            dot.addEventListener('click', () => {
+                currentIllustration = parseInt(dot.getAttribute('data-index'));
+                updateCarousel();
+                
+                // Reset timer if playing
+                if (isPlaying) {
+                    clearInterval(carouselInterval);
+                    startCarousel();
                 }
             });
-            
-            // If we're at results step
-            if (currentStep === 3) {
-                showQuizResults();
-                return;
-            }
-            
-            // Update question and options
-            const stepData = quizData.steps[currentStep];
-            quizContent.innerHTML = `
-                <h3>${stepData.title}</h3>
-                <div class="quiz-options">
-                    ${stepData.options.map(option => 
-                        `<div class="quiz-option">${option}</div>`
-                    ).join('')}
-                </div>
-            `;
-            
-            // Add event listeners to new options
-            const options = quizContent.querySelectorAll('.quiz-option');
-            options.forEach((option, index) => {
-                option.addEventListener('click', () => {
-                    userAnswers[currentStep] = index;
-                    
-                    // Highlight selected option
-                    options.forEach(opt => opt.classList.remove('selected'));
-                    option.classList.add('selected');
-                    
-                    // Auto-advance after short delay
-                    setTimeout(() => {
-                        currentStep++;
-                        updateQuizContent();
-                    }, 500);
-                });
-            });
-        };
-        
-        // Function to show quiz results
-        const showQuizResults = () => {
-            // Simple algorithm to determine result based on user answers
-            // For demo purposes, we'll use a weighted approach
-            let resultIndex = 0;
-            
-            // Check first answer (goal) - heavily weighted
-            if (userAnswers[0] === 0) resultIndex = 0; // New career -> Web Dev
-            else if (userAnswers[0] === 1) resultIndex = 3; // Advance role -> Career
-            else if (userAnswers[0] === 2) resultIndex = 2; // Specific skills -> Flexible
-            else if (userAnswers[0] === 3) resultIndex = 1; // Curiosity -> Data Science
-            
-            // Adjust based on experience if needed
-            if (userAnswers[1] >= 2 && resultIndex === 0) resultIndex = 3; // More experienced -> Career
-            
-            // Adjust based on time commitment
-            if (userAnswers[2] <= 1 && resultIndex !== 2) resultIndex = 2; // Less time -> Flexible
-            
-            const result = quizData.results[resultIndex];
-            
-            // Display result
-            quizContent.innerHTML = `
-                <h3>Your Recommended Path</h3>
-                <div class="quiz-result">
-                    <h4>${result.title}</h4>
-                    <p>${result.description}</p>
-                    <div class="recommended-courses">
-                        <h5>Recommended Courses:</h5>
-                        <div class="course-chips">
-                            ${result.courses.map(courseId => {
-                                // Find course by ID from courses array (defined in data.js)
-                                const course = typeof courses !== 'undefined' ? 
-                                    courses.find(c => c.id === courseId) : 
-                                    { title: `Course ${courseId}` };
-                                return `<div class="course-chip">${course.title}</div>`;
-                            }).join('')}
-                        </div>
-                        <button class="btn primary-btn">View Full Learning Path</button>
-                    </div>
-                </div>
-            `;
-            
-            // Change the image to results image
-            quizImage.src = 'assets/quiz-result.svg';
-            
-            // Add restart quiz button
-            const restartButton = document.createElement('button');
-            restartButton.className = 'btn secondary-btn restart-quiz';
-            restartButton.textContent = 'Restart Quiz';
-            quizContent.appendChild(restartButton);
-            
-            restartButton.addEventListener('click', () => {
-                currentStep = 0;
-                userAnswers.length = 0;
-                quizImage.src = 'assets/find-path.svg';
-                updateQuizContent();
-            });
-        };
-        
-        // Initialize quiz with first question
-        updateQuizContent();
-    };
-    
-    // Initialize quiz if elements exist
-    quizInit();
-});
-
-// =============================================
-// Custom Dotted Background
-// =============================================
-// This function has been replaced with a CSS-based solution
-// Background is now created with CSS radial-gradient 
-
-// Quiz Functionality
-document.addEventListener('DOMContentLoaded', function() {
-    initQuiz();
-});
-
-function initQuiz() {
-    const optionButtons = document.querySelectorAll('.quiz-option button');
-    
-    if (optionButtons.length) {
-        optionButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                // Remove selected class from all buttons
-                optionButtons.forEach(btn => {
-                    btn.classList.remove('selected');
-                });
-                
-                // Add selected class to clicked button
-                this.classList.add('selected');
-                
-                // Here you would typically handle advancing to the next question
-                // or saving the user's selection
-            });
         });
+
+        // Add event listener to play/pause button
+        const carouselPlay = document.querySelector('.carousel-play');
+        if (carouselPlay) {
+            carouselPlay.addEventListener('click', () => {
+                if (isPlaying) {
+                    pauseCarousel();
+                } else {
+                    startCarousel();
+                }
+            });
+        }
     }
-} 
+}); 

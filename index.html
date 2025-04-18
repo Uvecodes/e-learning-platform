@@ -327,51 +327,191 @@
             </div>
         </section>
 
-        <!-- Quiz Section -->
-        <section class="quiz-section">
+        <!-- Find what's right section -->
+        <section id="find-right">
             <div class="container">
-                <div class="quiz-header">
-                    <h2>Find what's right for you</h2>
-                    <p>Answer 3 quick questions to get recommendations that match your interests.</p>
-                </div>
-                
-                <div class="quiz-content-wrapper">
-                    <div class="question-section">
-                        <div class="question-indicator">
-                            <span class="step-circle active">
-                                <i class="fas fa-check"></i>
-                            </span>
-                            <span class="step-number">2</span>
-                            <span class="step-number">3</span>
-                        </div>
-                        
-                        <div class="quiz-question">
-                            <h3>What do you want to achieve?</h3>
+                <div class="content-wrapper">
+                    <div class="section-header">
+                        <h2>Find what's right for you</h2>
+                        <p class="section-subtitle">Answer 3 quick questions to get recommendations that match your interests.</p>
+                    </div>
+                    
+                    <div class="section-content">
+                        <div class="quiz-container">
+                            <div class="question-numbers">
+                                <div class="number active">
+                                    <span class="num">1</span>
+                                    <span class="check"><i class="fas fa-check"></i></span>
+                                </div>
+                                <div class="number">
+                                    <span class="num">2</span>
+                                    <span class="check"><i class="fas fa-check"></i></span>
+                                </div>
+                                <div class="number">
+                                    <span class="num">3</span>
+                                    <span class="check"><i class="fas fa-check"></i></span>
+                                </div>
+                            </div>
                             
-                            <div class="quiz-options">
-                                <div class="quiz-option">
-                                    <button class="option-button">Switch careers</button>
-                                </div>
-                                <div class="quiz-option">
-                                    <button class="option-button">Learn a skill for my job</button>
-                                </div>
-                                <div class="quiz-option">
-                                    <button class="option-button">Build a project</button>
-                                </div>
-                                <div class="quiz-option">
-                                    <button class="option-button">Learn for school</button>
+                            <div class="quiz-content">
+                                <div class="question-wrapper">
+                                    <div class="question-header">
+                                        <h3 class="quiz-question">What do you want to learn about?</h3>
+                                    </div>
+                                    <div class="options-grid">
+                                        <button class="option-btn">Web development</button>
+                                        <button class="option-btn">Data science</button>
+                                        <button class="option-btn">Computer science</button>
+                                        <button class="option-btn">Web design</button>
+                                        <button class="option-btn">Artificial intelligence</button>
+                                        <button class="option-btn">Machine learning</button>
+                                        <button class="option-btn">Game development</button>
+                                        <button class="option-btn">Mobile development</button>
+                                        <button class="option-btn">Data visualization</button>
+                                        <button class="option-btn">Cloud computing</button>
+                                        <button class="option-btn">Cybersecurity</button>
+                                        <button class="option-btn">Not sure yet</button>
+                                    </div>
+                                    <span class="back-button" style="display: none;">Back</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="quiz-illustration">
-                        <img src="assets/quiz-results.svg" alt="Target with arrow illustration">
+
+                        <div class="illustration-container">
+                            <!-- Question 1 Illustration -->
+                            <div class="quiz-illustration" id="question1-illustration">
+                                <svg width="240" height="240" viewBox="0 0 240 240">
+                                    <!-- Notebook with lines -->
+                                    <rect x="20" y="40" width="100" height="140" fill="white" stroke="#10162F" stroke-width="2" rx="4"/>
+                                    <!-- Notebook spiral binding -->
+                                    <path d="M30 45 C30 43, 32 43, 32 45 L32 175 C32 177, 30 177, 30 175 Z" fill="#10162F"/>
+                                    <path d="M30 60 C30 58, 32 58, 32 60 M30 75 C30 73, 32 73, 32 75 M30 90 C30 88, 32 88, 32 90 M30 105 C30 103, 32 103, 32 105 M30 120 C30 118, 32 118, 32 120 M30 135 C30 133, 32 133, 32 135 M30 150 C30 148, 32 148, 32 150 M30 165 C30 163, 32 163, 32 165" stroke="#10162F" fill="none"/>
+                                    <!-- Notebook lines -->
+                                    <line x1="40" y1="60" x2="110" y2="60" stroke="#CCCCCC" stroke-width="1"/>
+                                    <line x1="40" y1="80" x2="110" y2="80" stroke="#CCCCCC" stroke-width="1"/>
+                                    <line x1="40" y1="100" x2="110" y2="100" stroke="#CCCCCC" stroke-width="1"/>
+                                    <line x1="40" y1="120" x2="110" y2="120" stroke="#CCCCCC" stroke-width="1"/>
+                                    <line x1="40" y1="140" x2="110" y2="140" stroke="#CCCCCC" stroke-width="1"/>
+                                    <line x1="40" y1="160" x2="110" y2="160" stroke="#CCCCCC" stroke-width="1"/>
+
+                                    <!-- Longer Pencil with details -->
+                                    <g transform="rotate(-45, 70, 110)">
+                                        <rect x="20" y="100" width="100" height="20" fill="#FFD700"/>
+                                        <!-- Pencil tip -->
+                                        <path d="M120 100 L130 110 L120 120 Z" fill="#10162F"/>
+                                        <!-- Eraser end -->
+                                        <rect x="15" y="105" width="10" height="10" fill="#FF6B6B"/>
+                                        <path d="M15 105 L10 110 L15 115 Z" fill="#FF6B6B"/>
+                                        <!-- Wood grain details -->
+                                        <line x1="30" y1="100" x2="30" y2="120" stroke="#FFB700" stroke-width="1"/>
+                                        <line x1="50" y1="100" x2="50" y2="120" stroke="#FFB700" stroke-width="1"/>
+                                        <line x1="70" y1="100" x2="70" y2="120" stroke="#FFB700" stroke-width="1"/>
+                                        <line x1="90" y1="100" x2="90" y2="120" stroke="#FFB700" stroke-width="1"/>
+                                        <!-- Metal band -->
+                                        <rect x="95" y="100" width="5" height="20" fill="#C0C0C0"/>
+                                    </g>
+                                    
+                                    <!-- Textbook -->
+                                    <rect x="130" y="40" width="90" height="140" fill="#FFD700" stroke="#10162F" stroke-width="2" rx="4"/>
+                                    <!-- Book spine with detail -->
+                                    <rect x="125" y="40" width="15" height="140" fill="#FFB700" stroke="#10162F" stroke-width="2"/>
+                                    <path d="M125 60 L140 60 M125 100 L140 100 M125 140 L140 140" stroke="#10162F" stroke-width="1"/>
+                                    <!-- Book lines -->
+                                    <rect x="150" y="60" width="50" height="8" fill="#10162F"/>
+                                    <rect x="150" y="80" width="50" height="8" fill="#10162F"/>
+                                    <rect x="150" y="100" width="50" height="8" fill="#10162F"/>
+                                    <!-- Book bookmark with shadow -->
+                                    <path d="M205 40 L205 70 L195 60 L185 70 L185 40" fill="#10162F"/>
+                                    <path d="M205 40 L205 70 L195 60 L185 70 L185 40" fill="#000" opacity="0.1" transform="translate(2,0)"/>
+                                    <!-- Book corner fold -->
+                                    <path d="M210 40 L220 50 L220 40 Z" fill="#FFB700" stroke="#10162F" stroke-width="1"/>
+                                </svg>
+                                <p class="illustration-text">We have hundreds of courses that cover just about everything.</p>
+                            </div>
+
+                            <!-- Question 2 Illustration (initially hidden) -->
+                            <div class="quiz-illustration" id="question2-illustration" style="display: none;">
+                                <svg width="240" height="240" viewBox="0 0 240 240">
+                                    <!-- Target circle with rings -->
+                                    <circle cx="120" cy="120" r="80" fill="#10162F" stroke="white" stroke-width="2"/>
+                                    <circle cx="120" cy="120" r="60" fill="white" stroke="#10162F" stroke-width="2"/>
+                                    <circle cx="120" cy="120" r="40" fill="#EB4D4B" stroke="white" stroke-width="2"/>
+                                    <circle cx="120" cy="120" r="20" fill="white" stroke="#10162F" stroke-width="2"/>
+                                    <circle cx="120" cy="120" r="5" fill="#10162F"/>
+
+                                    <!-- Arrow -->
+                                    <rect x="120" y="120" width="100" height="8" fill="#10162F" transform="rotate(-15, 120, 120)"/>
+                                    <!-- Arrow head -->
+                                    <path d="M215 110 L230 120 L215 130" fill="#FFD700" stroke="#10162F" stroke-width="2"/>
+
+                                    <!-- Decorative stars/sparkles -->
+                                    <path d="M40 40 L45 45 M40 45 L45 40" stroke="#FFD700" stroke-width="2"/>
+                                    <path d="M200 180 L205 185 M200 185 L205 180" stroke="#FFD700" stroke-width="2"/>
+                                    <circle cx="60" cy="180" r="2" fill="#FFD700"/>
+                                    <circle cx="190" cy="50" r="2" fill="#FFD700"/>
+
+                                    <!-- Success checkmark -->
+                                    <circle cx="40" cy="120" r="15" fill="#FFD700"/>
+                                    <path d="M32 120 L38 126 L48 116" stroke="#10162F" stroke-width="2" fill="none"/>
+                                </svg>
+                                <p class="illustration-text">Setting a goal makes you 40% more likely to stick with it.</p>
+                            </div>
+
+                            <!-- Question 3 Illustration (initially hidden) -->
+                            <div class="quiz-illustration" id="question3-illustration" style="display: none;">
+                                <svg width="240" height="240" viewBox="0 0 240 240">
+                                    <!-- Code Editor -->
+                                    <rect x="30" y="30" width="120" height="80" rx="4" fill="#10162F" stroke="#000" stroke-width="1"/>
+                                    <!-- White section (docs) -->
+                                    <rect x="30" y="30" width="60" height="80" rx="4" fill="white" stroke="#10162F" stroke-width="1"/>
+                                    <!-- Document lines -->
+                                    <line x1="40" y1="45" x2="80" y2="45" stroke="#CCCCCC" stroke-width="2"/>
+                                    <line x1="40" y1="55" x2="80" y2="55" stroke="#CCCCCC" stroke-width="2"/>
+                                    <line x1="40" y1="65" x2="70" y2="65" stroke="#CCCCCC" stroke-width="2"/>
+                                    <line x1="40" y1="75" x2="75" y2="75" stroke="#CCCCCC" stroke-width="2"/>
+                                    <line x1="40" y1="85" x2="80" y2="85" stroke="#CCCCCC" stroke-width="2"/>
+                                    <line x1="40" y1="95" x2="65" y2="95" stroke="#CCCCCC" stroke-width="2"/>
+                                    
+                                    <!-- Code in dark section -->
+                                    <line x1="100" y1="45" x2="140" y2="45" stroke="white" stroke-width="2"/>
+                                    <line x1="110" y1="55" x2="130" y2="55" stroke="white" stroke-width="2"/>
+                                    <line x1="100" y1="65" x2="135" y2="65" stroke="white" stroke-width="2"/>
+                                    <line x1="105" y1="75" x2="125" y2="75" stroke="white" stroke-width="2"/>
+                                    <line x1="110" y1="85" x2="140" y2="85" stroke="white" stroke-width="2"/>
+                                    
+                                    <!-- Checkmark icon -->
+                                    <circle cx="160" cy="50" r="10" fill="#4CAF50"/>
+                                    <path d="M155 50 L158 54 L166 46" stroke="white" stroke-width="2" fill="none"/>
+                                    
+                                    <!-- Learning path steps -->
+                                    <rect x="40" y="160" width="40" height="20" fill="#FFD700" stroke="#10162F" stroke-width="1"/>
+                                    <rect x="60" y="140" width="40" height="20" fill="#FFD700" stroke="#10162F" stroke-width="1" fill-opacity="0.8"/>
+                                    <rect x="80" y="120" width="40" height="20" fill="#FFD700" stroke="#10162F" stroke-width="1" fill-opacity="0.6"/>
+                                    <!-- Step diagonal lines -->
+                                    <line x1="50" y1="150" x2="70" y2="150" stroke="#10162F" stroke-width="1" stroke-dasharray="2,2"/>
+                                    <line x1="70" y1="130" x2="90" y2="130" stroke="#10162F" stroke-width="1" stroke-dasharray="2,2"/>
+                                    
+                                    <!-- Interactive button -->
+                                    <rect x="160" y="130" width="40" height="20" rx="10" fill="#275EFE"/>
+                                    <!-- Mouse cursor -->
+                                    <path d="M170 140 L175 135 L178 145 L170 140" fill="#10162F"/>
+                                    
+                                    <!-- Red circle path -->
+                                    <circle cx="180" cy="170" r="8" fill="#EB4D4B"/>
+                                    <circle cx="180" cy="190" r="8" fill="#EB4D4B"/>
+                                    <path d="M180 178 L180 182" stroke="#EB4D4B" stroke-width="2"/>
+                                    
+                                    <!-- Decorative stars -->
+                                    <path d="M30 20 L35 25 M30 25 L35 20" stroke="#CCCCCC" stroke-width="1"/>
+                                    <path d="M200 210 L205 215 M200 215 L205 210" stroke="#CCCCCC" stroke-width="1"/>
+                                </svg>
+                                <p class="illustration-text">Our hands-on learning environment is designed for all levels.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Quiz Section End -->
     </main>
 
     <footer>
@@ -379,5 +519,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/quiz.js"></script>
 </body>
 </html> 
